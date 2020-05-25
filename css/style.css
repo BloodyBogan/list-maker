@@ -69,6 +69,7 @@ body {
   background: transparent;
   border: 0;
   border-bottom: 2px solid var(--clr-accent2);
+  padding: 0 0.5em;
   margin: 0 1.5em 1.5em 0;
 }
 
