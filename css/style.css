@@ -1,0 +1,98 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@700&family=Nunito+Sans:wght@300;400&display=swap');
+
+/* Global Variables */
+:root {
+  --clr-background: #dcdde1;
+  --clr-text: #373945;
+  --clr-accent: #3a7af2;
+  --clr-accent2: #c0c3cb;
+  --font-heading: 'Halant', serif;
+  --font-text: 'Nunito Sans', sans-serif;
+  --transition: all 150ms ease-in;
+}
+
+/* Basic Reset & Styling */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  margin-top: 0;
+}
+
+p,
+button,
+input {
+  font-family: var(--font-text);
+  font-weight: 400;
+}
+
+input {
+  width: 50%;
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  background-color: var(--clr-background);
+  color: var(--clr-text);
+}
+
+/* Container */
+.container {
+  max-width: 620px;
+  margin: 4em auto;
+  padding: 0 1.5em;
+  text-align: left;
+  overflow: hidden;
+}
+
+/* Container Elements */
+.title {
+  line-height: 1.1;
+  font-size: 2.8rem;
+  margin-bottom: 0.25em;
+}
+
+.text {
+  margin: 0 0 3em 0;
+}
+
+.input {
+  font-size: 1rem;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid var(--clr-accent2);
+  margin: 0 1.5em 1.5em 0;
+}
+
+.btn {
+  font-size: 0.85rem;
+  color: var(--clr-background);
+  text-transform: uppercase;
+  padding: 0.5em 2em;
+  background-color: var(--clr-accent);
+  border: 0;
+  border: 2px solid var(--clr-accent);
+  border-radius: 20px;
+  margin-bottom: 1.5em;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--clr-accent);
+  background-color: var(--clr-background);
+}
+
+/* Items List */
+.items__list {
+  list-style-type: circle;
+}
